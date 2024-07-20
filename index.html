@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dream City</title>
+    <style>
+       .mainContainer{
+        background-color: aquamarine;
+        background-size: cover;
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 15px;
+       }
+       .p1{
+        border: 1px solid gray;
+        
+       }
+       nav{
+        font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+       }
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 10px;
+}
+
+li a {
+    color: #1f18e1;
+    text-decoration:underline;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+li a:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+    li {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+.header>p{
+    color: rgb(186, 15, 44);
+    font-size: 20px;
+    background-color: #fff;
+}
+.intro{
+    background-color: bisque;
+}
+.intro>h2{
+    text-decoration: underline;
+}
+.intro>img{
+    width: 200px;
+    margin-right: auto;
+}
+.attraction,ul,ol,li{
+    text-align:left;
+}
+ul,ol{
+    padding: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: whitesmoke;
+    font-size: 20px;
+}
+table,td,th{
+    border:1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+.feedback{
+    text-align: center;
+}
+.quotes{
+    font-family: cursive;
+}
+
+</style>
+</head>
+<body>
+    <div class="mainContainer">
+   <div class="header">
+    <h1>Delhi</h1>
+    <p class="p1">' It's not just a city but an emotion '</p>
+   </div>
+   <hr>
+   <nav>
+    <ul>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#attraction">Attraction</a></li>
+        <li><a href="#statistics">Statistics</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+   <hr>
+   <div class="intro">
+   <h2>A brief Introduction of City 'Delhi'</h2>
+   <img src="https://cdn.britannica.com/37/189837-050-F0AF383E/New-Delhi-India-War-Memorial-arch-Sir.jpg"/>
+   <p>Delhi is  the capital of India and one of the most populous cities in the world
+    it's rich in history and culture, with many ancient and important sites
+    <strong>Delhi has been an important political center of Indian as the capital of several empires.</strong>
+   </p>
+</div>
+<hr>
+<div class="attraction">
+<h2>Attraction</h2>
+<h3>Main Attractions</h3>
+<ol type="1">For places:-
+    <li>New Delhi parliament House</li>
+    <li>Qutub Minar</li>
+    <li>India Gate</li>
+    <li>Lotus Temple</li>
+<ul type="a">For Famous food:-
+    <li>"Dahi Bhalla"of old delhi,Chawri Bazar</li>
+    <li>"momos" Momo of Mia Stall 6, Dilli Haat</li>
+    <li>"Cchole Bhature" of Paharganj, kamla Nagar and Chandni Chowk</li>
+</ul>
+</ol>
+</div>
+<hr>
+ <h2>City Statistics:</h2>
+ <table>
+    <tr>
+        <th>s.no.</th>
+        <th>Facts about Delhi</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Red fort used to be white in color.</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Delhi was once bound by 14 gates.</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Delhi is leading Commercial center of India.</td>
+    </tr>
+ </table>
+ <hr>
+ <div class="feedback">
+    <h2>Feedback</h2>
+ 
+ <form action="#" method="post">
+    <label for="name">Name*:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Email*:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="phone">Number*:</label>
+    <input type="number" id="phone" name="phone" required>
+    <br>
+    <label for="feedback-type">Feedback Type:</label>
+            <select type="checkbox" id="feedback-type" name="feedback-type">
+                <option value="">Select...</option>
+                <option value="Complaint">Complaint</option>
+                <option value="Suggestion">Suggestion</option>
+                <option value="Compliment">Compliment</option>
+            </select>
+            <br>
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+            <br>
+        <button type="submit" class="btn-submit">Submit Feedback</button>
+ </form>
+</div>
+ <hr>
+ <div class="quotes">
+    <h2>Quotes from Citizens:</h2>
+    <p>Explore the <span>Treasures of Delhi</span> You will never run out of wonders. ~shina</p>
+    <p>In Delhi every moment is on adventure waiting to happen. ~mayank</p>
+ </div>
+<hr>
+<section class="contact">
+<h2>Contact Us</h2>
+<address>
+    <p><i>123 Main Street Delhi</i></p>
+    <p><i>Phone: 555-441-4356</i></p>
+    <p><i>Email: <a href="info@citytourismoffice.com"></a></i></p>
+</address>
+</section>
+<hr>
+<footer>
+    <p>&Copy: 2024@ City Tourism Office. All rights reserved.</p>
+    <p><i>"Experience the beauty of our city. Where tradition meets innovation"</i></p>
+</footer>
+
+
+</div>
+</body>
+</html>
